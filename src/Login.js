@@ -42,7 +42,7 @@ function Login() {
         if (login.data.token) {
           window.localStorage.setItem("token", login.data.token);
           message.success("Logged in Successfully");
-          Navigate("/");
+          Navigate("/Homepage");
         } else {
           message.error("Email/password is incorrect");
           setLoading(false);

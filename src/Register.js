@@ -52,7 +52,7 @@ function Register() {
       setemail(new_users?.data?.error);
       console.log(new_users);
       if (!new_users?.data?.error) {
-        Navigate("/");
+        Navigate("/Homepage");
       }
     },
   });
